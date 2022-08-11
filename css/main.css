@@ -91,6 +91,12 @@ body {
   background-color: var(--backdrop-bgc);
   transition: opacity var(--transition-hover), transform var(--transition-hover), visibility var(--transition-hover);
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(2);
+}
 
 .modal {
   position: absolute;
@@ -121,19 +127,10 @@ body {
   padding: 0;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: scale(2);
-}
-
 .icon-close-black {
   transition: fill var(--transition-hover);
 }
-
-.modal-close:hover .icon-close-black,
-.modal-close:focus .icon-close-black {
+.modal-close:hover .icon-close-black, .modal-close:focus .icon-close-black {
   fill: var(--accent-color);
 }
 
@@ -171,12 +168,10 @@ body {
   border-radius: 4px;
   transition: border var(--transition-hover);
 }
-
 .form-comment:focus {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .form-comment::placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -197,14 +192,8 @@ body {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .form-input:focus + .icon-form {
   fill: var(--accent-color);
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  background-color: var(--bg-color-btn-hero-hover);
 }
 
 .form-btn {
@@ -218,6 +207,9 @@ body {
   padding: 10px 55px;
   color: #ffffff;
   transition: background-color var(--transition-hover);
+}
+.form-btn:hover, .form-btn:focus {
+  background-color: var(--bg-color-btn-hero-hover);
 }
 
 .form-btn-correct {
@@ -264,6 +256,16 @@ body {
   cursor: pointer;
   background-color: var(--headbg-color);
 }
+.form-check-input:checked + .form-label-nocheck {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .form-check-img {
   position: absolute;
@@ -287,17 +289,6 @@ body {
 
 .span {
   position: relative;
-}
-
-.form-check-input:checked + .form-label-nocheck {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }
 
 .header {
@@ -397,13 +388,13 @@ body {
 .contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
 }
-.contact-link:hover .icon-contact, .contact-link:hover .icon-contact, .contact-link:focus .icon-contact, .contact-link:focus .icon-contact {
-  fill: var(--accent-color);
-}
 
 .icon-contact {
   transition: fill var(--transition-hover);
   margin-right: 10px;
+}
+.contact-link .icon-contact, .contact-link .icon-contact {
+  fill: var(--accent-color);
 }
 
 .section-hero {
@@ -783,13 +774,6 @@ body {
   background-color: var(--headbg-color);
 }
 
-.filter-button:hover,
-.filter-button:focus {
-  background-color: var(--accent-color);
-  color: var(--headbg-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -800,6 +784,11 @@ body {
   border: none;
   padding: 6px 20px;
   transition: background-color var(--transition-hover), color var(--transition-hover), box-shadow var(--transition-hover);
+}
+.filter-button:hover, .filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--headbg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-portfolio {
@@ -833,9 +822,7 @@ body {
   background-color: var(--bg-color-overlay);
   padding: 63px 24px;
 }
-
-.link-portfolio:hover .text-overlay,
-.link-portfolio:focus .text-overlay {
+.link-portfolio:hover .text-overlay, .link-portfolio:focus .text-overlay {
   transform: translate(0, 0);
 }
 
@@ -858,8 +845,6 @@ body {
   display: block;
   transition: box-shadow var(--transition-hover);
 }
-
-.link-portfolio:hover,
-.link-portfolio:focus {
+.link-portfolio:hover, .link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,5 @@
 .section-hero {
   background-color: var(--hero-background);
-
   text-align: center;
   padding-top: 200px;
   padding-bottom: 198px;
@@ -30,11 +29,6 @@
   color: var(--headbg-color);
 }
 
-.service-button:hover,
-.service-button:focus {
-  background-color: var(--bg-color-btn-hero-hover);
-}
-
 .service-button {
   padding: 10px 32px;
   font-family: inherit;
@@ -47,4 +41,8 @@
   background-color: var(--accent-color);
   color: var(--headbg-color);
   transition: background-color var(--transition-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--bg-color-btn-hero-hover);
+  }
 }

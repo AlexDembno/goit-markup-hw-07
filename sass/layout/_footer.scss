@@ -5,10 +5,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-container {
   display: flex;
   align-items: baseline;
 }
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -37,15 +39,14 @@
   letter-spacing: 0.03em;
   color: var(--contact-color-footer);
   transition: color var(--transition-hover);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .item-footer:first-child {
   margin-bottom: 9px;
-}
-
-.contact-footer:hover,
-.contact-footer:focus {
-  color: var(--accent-color);
 }
 
 .text-social-footer {
@@ -78,11 +79,10 @@
   background-color: var(--bg-color-icon-footer);
   fill: var(--headbg-color);
   transition: background-color var(--transition-hover);
-}
-
-.link-team-footer:hover,
-.link-team-footer:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .wrapper-logo-address {
@@ -103,14 +103,13 @@
   margin-right: 12px;
   background-color: var(--footer-background);
   color: var(--contact-color-footer);
-}
-
-.form-input-footer::placeholder {
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: var(--contact-color-footer);
+  &::placeholder {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--contact-color-footer);
+  }
 }
 
 .form-btn-footer {

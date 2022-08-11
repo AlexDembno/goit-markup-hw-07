@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--footer-background);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--headbg-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.text-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--headbg-color);
+  margin-bottom: 9px;
+}
+
+.contact-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-color-footer);
+  transition: color var(--transition-hover);
+}
+
+.item-footer:first-child {
+  margin-bottom: 9px;
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
+.text-social-footer {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headbg-color);
+  margin-bottom: 20px;
+}
+
+.form-footer-cursor {
+  cursor: pointer;
+}
+
+.list-social-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.link-team-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-color-icon-footer);
+  fill: var(--headbg-color);
+  transition: background-color var(--transition-hover);
+}
+
+.link-team-footer:hover,
+.link-team-footer:focus {
+  background-color: var(--accent-color);
+}
+
+.wrapper-logo-address {
+  margin-right: 70px;
+}
+
+.form-footer {
+  margin-left: auto;
+}
+
+.form-input-footer {
+  padding: 15px 16px;
+  width: 358px;
+  border: 1px solid var(--border-form);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  margin-right: 12px;
+  background-color: var(--footer-background);
+  color: var(--contact-color-footer);
+}
+
+.form-input-footer::placeholder {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--contact-color-footer);
+}
+
+.form-btn-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 28px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.wrapper-text-btn-footer {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-right: 10px;
+
+  color: var(--headbg-color);
+}
+
+.wrapper-label-footer {
+  display: flex;
+}

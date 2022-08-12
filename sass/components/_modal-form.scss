@@ -79,9 +79,7 @@
 }
 
 .form-btn-correct {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
 }
 
 .box-icon {

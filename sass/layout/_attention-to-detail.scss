@@ -39,9 +39,7 @@
 }
 
 .icon-position-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bg-color-detail);

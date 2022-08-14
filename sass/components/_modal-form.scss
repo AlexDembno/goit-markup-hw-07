@@ -1,19 +1,17 @@
 .form-top-text {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 23px);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
 
-.form-label {
+.form__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-text-label {
+.form__text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -22,7 +20,7 @@
   color: var(--subtitle-color);
 }
 
-.form-comment {
+.form__comment {
   display: block;
   width: 100%;
   height: 120px;
@@ -43,7 +41,7 @@
   }
 }
 
-.form-input {
+.form__input {
   display: block;
   width: 100%;
   padding: 12px 42px;
@@ -52,15 +50,15 @@
   transition: border var(--transition-hover);
 }
 
-.form-input:focus {
+.form__input:focus {
   outline: none;
   border-color: var(--accent-color);
-  & + .icon-form {
+  & + .form__icon {
     fill: var(--accent-color);
   }
 }
 
-.form-btn {
+.form-send__btn {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -78,15 +76,15 @@
   }
 }
 
-.form-btn-correct {
+.form-send {
   @extend %align;
 }
 
-.box-icon {
+.form__wrapper {
   position: relative;
 }
 
-.icon-form {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -94,7 +92,7 @@
   transition: fill var(--transition-hover);
 }
 
-.form-check-input {
+.form-check__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -105,7 +103,7 @@
   clip: rect(0 0 0 0);
 }
 
-.form-label-nocheck {
+.form-check__nocheck {
   position: absolute;
   z-index: 1;
   display: block;
@@ -119,19 +117,9 @@
   transform: translateY(-50%);
   cursor: pointer;
   background-color: var(--headbg-color);
-  .form-check-input:checked + & {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-  }
 }
 
-.form-check-img {
+.form-check__img {
   position: absolute;
   margin-left: 13px;
   left: 0;
@@ -140,7 +128,7 @@
   cursor: pointer;
 }
 
-.text-agree {
+.form-check__text {
   display: block;
   font-size: 14px;
   line-height: 1.71;
@@ -153,4 +141,15 @@
 
 .span {
   position: relative;
+}
+
+.form-check__input:checked + .form-check__nocheck {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }

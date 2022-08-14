@@ -1,4 +1,4 @@
-.section-doing {
+.section_doing {
   padding-top: 0px;
 }
 .doing-list {
@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 
-.doing-item {
+.doing-list__item {
   position: relative;
 }
 
@@ -16,7 +16,7 @@
   gap: 30px;
 }
 
-.bg-text {
+.doing-list__wrapper-text {
   position: absolute;
   transform: translateY(-100%);
   width: 100%;
@@ -24,10 +24,8 @@
   z-index: 100;
 }
 
-.text-doing {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+.doing-list__text {
+  @include font($font-weight: 700);
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;

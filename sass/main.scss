@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/placeholder";
+@import "./utils/mixin";
 
 @import "./base/common";
 @import "./base/container";
@@ -16,5 +17,4 @@
 @import "./layout/our-team";
 @import "./layout/regular-clients";
 @import "./layout/footer";
-
-@import "./pages/portfolio";
+@import "./layout/portfolio";

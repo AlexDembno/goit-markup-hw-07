@@ -1,4 +1,4 @@
-.section-team {
+.section_team {
   background: var(--team-background);
 }
 
@@ -8,58 +8,28 @@
   gap: 30px;
 }
 
-.team-item {
+.team-list__item {
   background: var(--headbg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.border-team {
+.team-list__border {
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.subtitle-team {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+.team-list__subtitle {
+  @include font($font-size: 16px, $line-height: 19px);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
-.text-team {
+.team-list__text {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--subtitle-color);
   margin-bottom: 16px;
-}
-
-.list-social {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.list-social__link {
-  @extend %align;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--headbg-color);
-  fill: var(--icon-fill);
-  transition: background-color var(--transition-hover);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    & .list-social__icon,
-    & .list-social__icon {
-      fill: var(--headbg-color);
-    }
-  }
-}
-
-.list-social__icon {
-  transition: fill var(--transition-hover);
 }

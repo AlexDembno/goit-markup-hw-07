@@ -3,25 +3,12 @@
   gap: 30px;
 }
 
-.subtitle-detail {
+.detail-list__subtitle {
   margin-bottom: 10px;
 }
 
-.title-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.subtitle-detail {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+.detail-list__subtitle {
+  @include font($font-weight: 700);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -29,7 +16,7 @@
   height: 16px;
 }
 
-.text-detail {
+.detail-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -38,7 +25,7 @@
   height: 75px;
 }
 
-.icon-position-details {
+.detail-list__icon {
   @extend %align;
   height: 120px;
   margin-bottom: 30px;
